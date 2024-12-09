@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    display: flex;
+    margin: 0;
+    background-color: #606d80;
+    color: #ffffff;
+}
+
+/* General Styles */
+#top-nav {
+    background-color: #00264e;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    align-content: center;
+
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    align-items: center;
+}
+
+.nav-button:hover {
+    color: #007BFF;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+ 
+}
+
+
+#yo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+/* Responsive Menu Button */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.nav-bar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.nav-bar.responsive li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.nav-bar.responsive li .nav-button {
+    font-size: 18px;
+}
+
+.nav-bar.show {
+    display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #side-nav {
+        width: 200px;
+    }
+
+    .nav-button {
+        font-size: 0.9rem;
+    }
+
+    #content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    #side-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .hover {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        text-align: center;
+    }
+
+    #content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+
+
+
+img {
+    width: 550px;
+    height: 200px; /* La imagen ocupará el 100% del ancho del contenedor */
+  ; /* No superará los 450px en tamaño completo */
+  /* Mantendrá la proporción original */
+    display: inline-block; /* Asegura que la imagen y el botón estén en línea */
+    vertical-align: middle; /* Alinea verticalmente con otros elementos */
+    margin-left: 10px; /* Espaciado a la izquierda */
+}
+
+
+.img-fluid{
+    width: 50px;
+}
+
+
+
+/* Estilo del botón */
+button {
+    display: inline-block; /* También asegura que esté en línea */
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px; /* Espaciado interno para el diseño */
+    vertical-align: middle; /* Alinea verticalmente con la imagen */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Efecto hover para acercamiento (zoom) */
+button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+}
+
+/* Estilo de hover para div */
+div.hover:hover {
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+/* Estilo de hover2 para div */
+div.hover2:hover {
+    background-color: #000000;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+
+img.yo{
+    height: 10px;
+    width: 130px;
+    border-radius: 50%;
+    
+}
+
+ 
+
+
+/* Estilo para #uni */
+#uni {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Efecto hover para #uni */
+#uni:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+/* Estilo para #skillss */
+#skillss {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para #skillss */
+#skillss:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para #proyectoss */
+#proyectoss {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para #proyectoss */
+#proyectoss:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para #cursos */
+#cursos {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para #cursos */
+#cursos:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para #exp */
+#exp {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para #exp */
+#exp:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para #contactoo */
+#contactoo {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para #contactoo */
+#contactoo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para #contenido */
+#contenido {
+    background-color: transparent;
+    border: 2px solid transparent; /* Borde inicial */
+    border-radius: 5px; /* Esquinas redondeadas opcionales */
+    padding: 0; /* Ajusta según tus necesidades */
+    animation: borderGlowAzul 2s infinite; /* Solo la animación de brillo azul */
+    height: 130px;
+    align-items: center;
+}
+
+/* Animación de brillo azul */
+@keyframes borderGlowAzul {
+    0% {
+        border-color: rgba(0, 128, 255, 0.2); /* Azul tenue */
+        box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); /* Sombra tenue */
+    }
+    50% {
+        border-color: rgba(0, 128, 255, 1); /* Azul intenso */
+        box-shadow: 0 0 20px rgba(0, 128, 255, 0.8); /* Sombra intensa */
+    }
+    100% {
+        border-color: rgba(0, 128, 255, 0.2); /* Azul tenue */
+        box-shadow: 0 0 5px rgba(0, 128, 255, 0.2); /* Sombra tenue */
+    }
+}
+
+/* Animación de acercamiento cuando el mouse pasa por encima */
+#contenido:hover {
+    animation: scaleUp 0.3s ease-out forwards, borderGlowAzul 2s infinite; /* Combina la animación de acercamiento y brillo azul */
+}
+
+/* Animación de acercamiento (zoom) */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    100% {
+        transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    }
+}
+
+#fon {
+    color: #ffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+#ccontacto {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#motoko {
+    height: 300px;
+    width: 50px;
+}
+
+#carrusel {
+    align-items: center;
+}
+
+#gym {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#contenidog {
+    background-color: transparent;
+    display: flex; /* Usamos flexbox para la disposición horizontal */
+    justify-content: flex-start; /* Alineamos los elementos al principio */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px; /* Espacio interno para el contenido */
+    border: transparent;
+}
+
+#gym {
+    width: 150px; /* Ajustamos el tamaño de la imagen */
+    height: 150px;
+    color: #fff;
+    border-color: transparent;
+}
+
+.left {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.right h6 {
+    text-align: center; /* Centra el texto en su contenedor */
+}
+
+h5{
+    color: #ffffff;
+}
+
+#one {
+    height: 900px;
+    width: 650px;
+}
+
+/* General Container Style */
+#content {
+    margin-top: 70px; /* Espacio para la barra de navegación fija */
+    padding: 20px;
+}
+
+/* Custom Container Layout */
+.custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.right-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}
+
+#nego {
+    width: 150px;
+    height: 150px;
+}
+
+#contenidooo {
+    background-color: transparent;
+    border: 2px solid transparent; /* Borde inicial */
+    border-radius: 5px; /* Esquinas redondeadas opcionales */
+    padding: 0; /* Ajusta según tus necesidades */
+    animation: borderGlowAzul 2s infinite; /* Aplica la animación */
+    height: 280px;
+    width: 250px;
+    align-items: center;
+}
+
+#fonn {
+    color: #ffff;
+    border: none;
+}
+
+#fonnn {
+    color: #ffff;
+}
+
+#ver {
+    background-color: #164995;
+    width: 90px;
+    border-radius: 15px;
+}
+
+#ver:hover {
+    background-color: #000000;
+}
+
+#descargaA {
+    background-color: #164995;
+    width: 150px;
+    border-radius: 15px;
+}
+
+#descargaA:hover {
+    background-color: #000000;
+}
+
+#descargaN {
+    background-color: #164995;
+    width: 150px;
+    border-radius: 15px;
+}
+
+#descargaN:hover {
+    background-color: #000000;
+}
+
+#descargaM {
+    background-color: #164995;
+    width: 150px;
+    border-radius: 15px;
+}
+
+#descargaM:hover {
+    background-color: #000000;
+}
+
+#first {
+    width: 100px;
+    background-color: #164995;
+}
+
+#first:hover {
+    background-color: #000000;
+}
+
